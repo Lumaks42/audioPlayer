@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/logo__min.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <title>Music player</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <audio src="" id="audio-source"></audio>
+<!-- __Home section__ -->
+
+  <section class="home__section">
+    <!-- __carousel__ -->
+    <div class="section__carousel">
+      <img class="section__carousel-img active" src="assets/images/cover 1.png" alt="music__img">
+      <img class="section__carousel-img" src="assets/images/cover 2.png" alt="music__img">
+      <img class="section__carousel-img" src="assets/images/cover 3.png" alt="music__img">
+      <img class="section__carousel-img" src="assets/images/cover 4.png" alt="music__img">
+      <img class="section__carousel-img" src="assets/images/cover 5.png" alt="music__img">
+    </div>
+    <!-- __playlists__ -->
+    <h2 class="section__heading-title">недавно игравшие</h2>
+    <div class="section__playlists-group">
+      <div class="playlist__card">
+        <img src="assets/images/cover 9.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">лушчие международные</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 2.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">BTS коллекционные</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 10.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">хиты голливуда</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 11.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">топ 50</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 5.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">джастин бибер</p>
+      </div>
+    </div>
+    <h2 class="section__heading-title">возможно вам понравится</h2>
+    <div class="section__playlists-group">
+      <div class="playlist__card">
+        <img src="assets/images/cover 11.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">лушчие международные</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 12.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">BTS коллекционные</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 13.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">хиты голливуда</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 1.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">топ 50</p>
+      </div>
+      <div class="playlist__card">
+        <img src="assets/images/cover 3.png" alt="" class="playlist__card-img">
+        <p class="playlist__card-name">джастин бибер</p>
+      </div>
+    </div>
+  </section>
+  <section class="section__music-player">
+
+    <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+    <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+    <h2 class="current-song-name">Song 1</h2>
+    <p class="artist-name hide">artist one</p>
+
+    <img src="assets/images/cover 1.png" class="cover hide" alt='картинка'>
+
+    <div class="seek-bar-container">
+      <input type="range" class="music-seek-bar" value="0">
+      <p class="current-time hide">00 : 00</p>
+      <p class="duration hide">00 : 00</p>
+    </div>
+
+    <div class="controls">
+      <span class="fas fa-redo"></span>
+      <div class="main">
+        <i class="fas fa-backward active"></i>
+        <i class="fas fa-play active"></i>
+        <i class="fas fa-pause"></i>
+        <i class="fas fa-forward active"></i>
+      </div>
+      <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+      <span class="fas fa-volume-up"></span>
+    </div>
+
+  </section>
+
+  <section class="playlist">
+
+    <img src="assets/images/back.png" class="back-btn icon" alt="">
+
+    <h2 class="playlist__title">плэйлист</h2>
+
+    <div class="queue active">
+      <div class="queue__cover">
+        <img src="assets/images/cover 1.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 1</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 2.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 2</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 3.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 3</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 4.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 4</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 5.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 5</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 6.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 6</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 7.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 7</p>
+    </div>
+    <div class="queue">
+      <div class="queue__cover">
+        <img src="assets/images/cover 8.png" alt="">
+        <i class="fas fa-pause"></i>
+      </div>
+      <p class="name">song 8</p>
+    </div>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
